@@ -3,7 +3,7 @@ services:
   dcache-pool:
     image: dcache/dcache:latest
     pull_policy: never
-    hostname: pool-1
+    hostname: main-1
     environment:
       - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5006
     networks:
