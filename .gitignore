@@ -1,7 +1,9 @@
 #volume directories
-pool/data/
+main/data/
 remote/data/
 infra/pgdata/
+core/billing
+
 
 # SSH host key - generate locally with:
 # ssh-keygen -t rsa -b 2048 -f core/ssh_host_rsa_key -N ""

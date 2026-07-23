@@ -2,7 +2,7 @@ cd "$(dirname "$0")/infra" && docker compose up -d
 sleep 0.5
 cd "../core" && docker compose up -d
 sleep 0.5
-cd "../pool" && docker compose up -d
+cd "../main" && docker compose up -d
 sleep 0.5
 cd "../remote" && docker compose up -d
 

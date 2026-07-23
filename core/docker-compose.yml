@@ -25,6 +25,7 @@ services:
       - ./omnisession.conf:/opt/dcache/etc/omnisession.conf
       - ./poolmanager.conf:/opt/dcache/etc/poolmanager.conf
       - ./exports:/opt/dcache/etc/exports
+      - ./billing:/var/log/dcache/billing
 
 networks:
   dcache:
