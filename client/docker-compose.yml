@@ -1,0 +1,33 @@
+services:
+
+  router:
+    image: alpine
+    networks:
+      remote-net:
+        ipv4_address: 10.2.0.2
+      dcache:
+        ipv4_address: 172.18.0.101
+    cap_add:
+      - NET_ADMIN
+    sysctls:
+      - net.ipv4.ip_forward=1
+    command: sleep infinity
+
+  remote-client:
+    image: alpine
+    networks:
+      remote-net:
+        ipv4_address: 10.2.0.100
+    cap_add:
+      - NET_ADMIN
+    command: sh -c "apk add --no-cache curl iproute2 && ip route add 172.18.0.0/16 via 10.2.0.2 && sleep infinity"
+    depends_on:
+      - router
+
+networks:
+  remote-net:
+    external: true
+    name: remote-net
+  dcache:
+    external: true
+    name: dcache

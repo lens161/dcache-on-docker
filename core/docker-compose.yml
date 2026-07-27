@@ -7,7 +7,8 @@ services:
     environment:
       - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
     networks:
-      - dcache
+      dcache:
+        ipv4_address: 172.18.0.100
     ports:
       - "8080:8080"
       - "3880:3880"
