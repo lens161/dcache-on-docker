@@ -1,1 +1,2 @@
 username:admin uid:0 gid:0,true roles:admin
+username:alice uid:1000 gid:1000,true
