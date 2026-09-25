@@ -6,6 +6,8 @@ cd "../main" && docker compose up -d
 sleep 0.5
 cd "../remote" && docker compose up -d
 sleep 0.5
+cd "../remote-2" && docker compose up -d
+sleep 0.5
 cd "../client" && docker compose up -d
 
 # echo "waiting for NFS doors to be ready..."

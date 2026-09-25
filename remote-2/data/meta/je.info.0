@@ -1,0 +1,21 @@
+2026-08-07 13:41:58.117 UTC INFO [/pool/meta] Loaded missing expiration data from file 0x0
+2026-09-23 14:52:25.166 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-23 14:52:25.167 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-23 14:53:17.959 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-23 14:53:17.960 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-23 14:59:13.559 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-23 14:59:13.562 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-23 15:02:17.097 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-23 15:02:17.099 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-24 07:53:01.300 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-24 07:53:01.304 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-24 08:04:15.636 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-24 08:04:15.640 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-24 08:10:27.881 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-24 08:10:27.885 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-24 08:17:06.388 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-24 08:17:06.389 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-24 08:25:11.559 UTC INFO [/pool/meta] JEErasure soft shutdown initiated.
+2026-09-24 08:25:11.563 UTC INFO [/pool/meta] RepairReservedFiles-/pool/meta soft shutdown initiated.
+2026-09-24 08:54:31.745 UTC WARNING [/pool/meta] FSync time of 50003 ms exceeds limit (5000 ms)
+2026-09-24 09:36:44.106 UTC WARNING [/pool/meta] FSync time of 1516918 ms exceeds limit (5000 ms)

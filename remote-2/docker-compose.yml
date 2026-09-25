@@ -3,18 +3,18 @@ services:
   dcache-pool:
     image: dcache/dcache:latest
     pull_policy: never
-    hostname: remote-1
+    hostname: remote-2
     networks:
       dcache:
-        ipv4_address: 172.18.0.10
+        ipv4_address: 172.18.0.11
       remote-net:
-        ipv4_address: 10.2.0.10
+        ipv4_address: 11.2.0.10
     ports:
-      - "8180:8180"
-      - "5007:5007"
+      - "8280:8280"
+      - "5008:5008"
       # - "2149:2049"
     environment:
-      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5007
+      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5008
     volumes:
       - ../common/dcache.conf:/opt/dcache/etc/dcache.conf
       - ./exports:/opt/dcache/etc/exports
@@ -26,7 +26,7 @@ networks:
     external: true
     name: dcache
   remote-net:
-    name: remote-net
+    name: remote-net-2
     ipam:
       config:
-        - subnet: 10.2.0.0/24
+        - subnet: 11.2.0.0/24
