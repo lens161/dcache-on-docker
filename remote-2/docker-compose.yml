@@ -20,6 +20,9 @@ services:
       - ./exports:/opt/dcache/etc/exports
       - ./docker-layout.conf:/opt/dcache/etc/layouts/docker-layout.conf
       - ./data:/pool
+      - ./certs/hostkey.pem:/etc/grid-security/hostkey.pem
+      - ./certs/hostcert.pem:/etc/grid-security/hostcert.pem
+      - ../common/certs/certificates:/etc/grid-security/certificates
 
 networks:
   dcache:

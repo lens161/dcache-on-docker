@@ -27,6 +27,9 @@ services:
       - ./poolmanager.conf:/opt/dcache/etc/poolmanager.conf
       - ./exports:/opt/dcache/etc/exports
       - ./billing:/var/log/dcache/billing
+      - ./certs/hostkey.pem:/etc/grid-security/hostkey.pem
+      - ./certs/hostcert.pem:/etc/grid-security/hostcert.pem
+      - ../common/certs/certificates:/etc/grid-security/certificates
 
 networks:
   dcache:
