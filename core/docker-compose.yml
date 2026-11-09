@@ -24,7 +24,7 @@ services:
       - ./htpasswd:/opt/dcache/etc/htpasswd
       - ./multi-mapfile:/opt/dcache/etc/multi-mapfile
       - ./omnisession.conf:/opt/dcache/etc/omnisession.conf
-      - ./poolmanager.conf:/opt/dcache/etc/poolmanager.conf
+      - ./poolmanager:/opt/dcache/var/poolmanager
       - ./exports:/opt/dcache/etc/exports
       - ./tunnel-allowed-cn.conf:/opt/dcache/etc/tunnel-allowed-cn.conf
       - ./billing:/var/log/dcache/billing
